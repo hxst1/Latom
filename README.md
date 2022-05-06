@@ -7,13 +7,9 @@ A simple discord bot with currently two functions
 - submit github profiles.
 
 ## \# Usage
-- Write `uwu` in any chat and he will count the total number of uwu there are.
+- Use `-help` to see the commands.
 
-![](https://cdn.discordapp.com/attachments/942494743030558741/969390464245567538/unknown.png)
-
-- Type `-github username` and it will reply with the github profile.
-
-![](https://cdn.discordapp.com/attachments/942494743030558741/969390139929411635/unknown.png)
+![](https://cdn.discordapp.com/attachments/942494743030558741/972136018021081088/unknown.png)
 
 ## \# Info
 「 This bot is in full development, any questions or suggestions can write to me on discord 」
