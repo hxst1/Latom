@@ -5,6 +5,7 @@
 A simple discord bot with currently two functions
 - count the total of "uwu" in a chat.
 - submit github profiles.
+- send respects
 
 ## \# Usage
 - Use `-help` to see the commands.
