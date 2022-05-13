@@ -10,7 +10,7 @@ A simple discord bot with currently two functions
 ## \# Usage
 - Use `-help` to see the commands.
 
-![](https://cdn.discordapp.com/attachments/942494743030558741/972136018021081088/unknown.png)
+![](https://media.discordapp.net/attachments/942494743030558741/974593155016056852/unknown.png)
 
 ## \# Info
 「 This bot is in full development, any questions or suggestions can write to me on discord 」
