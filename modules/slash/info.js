@@ -24,7 +24,8 @@ module.exports = {
           .setThumbnail(song.thumbnail)
           .setDescription(
             `Currently Playing [${song.title}](${song.url})\n\n` + bar
-          ),
+          )
+          .setColor("#FF1493"),
       ],
     });
   },

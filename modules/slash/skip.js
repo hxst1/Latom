@@ -18,7 +18,8 @@ module.exports = {
       embeds: [
         new MessageEmbed()
           .setDescription(`${currentSong.title} has been skipped!`)
-          .setThumbnail(currentSong.thumbnail),
+          .setThumbnail(currentSong.thumbnail)
+          .setColor("#FF1493"),
       ],
     });
   },

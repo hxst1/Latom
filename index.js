@@ -1,5 +1,5 @@
-const token = process.env["TOKEN"];
-//require("dotenv").config();
+//const token = process.env["TOKEN"];
+require("dotenv").config();
 const Discord = require("discord.js");
 const { Intents } = require("discord.js");
 const github = require("./modules/github");
@@ -15,7 +15,7 @@ const { Routes } = require("discord-api-types/v9");
 const app = express();
 const LOAD_SLASH = process.argv[2] === "load";
 const CLIENT_ID = "969275699577901127";
-const GUILD_ID = "624605738551083009";
+//const GUILD_ID = "guild_id";  LOAD BOTS DISCORD
 
 app.get("/", (req, res) => {
   res.send("Server ready");
@@ -53,7 +53,7 @@ for (const file of slashFiles) {
 }
 
 if (LOAD_SLASH) {
-  const rest = new REST({ version: "9" }).setToken(token);
+  const rest = new REST({ version: "9" }).setToken(process.env.TOKEN);
   console.log("Deploying slash commands");
   rest
     .put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), {
@@ -85,7 +85,7 @@ if (LOAD_SLASH) {
     };
     handleCommand();
   });
-  client.login(token);
+  client.login(process.env.TOKEN);
 }
 
 client.on("messageCreate", (message) => {
@@ -102,4 +102,8 @@ client.on("messageCreate", (message) => {
   if (low.toLowerCase() === "-help") {
     help(message);
   }
+});
+
+client.on("messageCreate", (message) => {
+  return (GUILD_ID = message.guildId);
 });

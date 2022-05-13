@@ -63,6 +63,7 @@ module.exports = {
       const song = result.tracks[0];
       await queue.addTrack(song);
       embed
+        .setColor("#FF1493")
         .setDescription(
           `**[${song.title}](${song.url})** has been added to the Queue`
         )
@@ -81,6 +82,7 @@ module.exports = {
       const playlist = result.playlist;
       await queue.addTracks(result.tracks);
       embed
+        .setColor("#FF1493")
         .setDescription(
           `**${result.tracks.length} songs from [${playlist.title}](${playlist.url})** have been added to the Queue`
         )
@@ -98,6 +100,7 @@ module.exports = {
       const song = result.tracks[0];
       await queue.addTrack(song);
       embed
+        .setColor("#FF1493")
         .setDescription(
           `**[${song.title}](${song.url})** has been added to the Queue`
         )
