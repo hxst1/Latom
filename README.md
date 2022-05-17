@@ -2,7 +2,7 @@
 # Latom
 
 ## \# Description
-A simple discord bot with currently two functions
+A simple discord bot with this functions:
 - count the total of "uwu" in a chat.
 - submit github profiles.
 - send respects.
