@@ -3,7 +3,7 @@
 
 ## \# Description
 A simple discord bot with this functions:
-- count the total of "uwu" in a chat. //[!]Under construction
+- count the total of "uwu" in a chat. //Under construction
 - submit github profiles.
 - send respects.
 - now also music bot!
