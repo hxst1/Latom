@@ -15,7 +15,7 @@ const { Routes } = require("discord-api-types/v9");
 const app = express();
 const LOAD_SLASH = process.argv[2] === "load";
 const CLIENT_ID = "969275699577901127";
-//const GUILD_ID = "guild_id";  LOAD BOTS DISCORD
+//const GUILD_ID = "624605738551083009"; //LOAD BOTS DISCORD
 
 app.get("/", (req, res) => {
   res.send("Server ready");
@@ -73,6 +73,7 @@ if (LOAD_SLASH) {
   client.on("ready", () => {
     console.log(`${client.user.username} is ready!`);
   });
+
   client.on("interactionCreate", (interaction) => {
     const handleCommand = async () => {
       if (!interaction.isCommand()) return;
